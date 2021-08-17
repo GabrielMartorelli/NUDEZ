@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nude.JS</title>
+  </head>
+  <body>
+    <!-- <img src="" id='img'/> Carrega uma imagem -->
+    <script src="nude.min.js"></script>
+    <!-- Carrega o Script -->
+    <script>
+      const img = document.getElementById("img");
+      nude.load(img);
+      nude.scan((result) => {
+        alert(result);
+      });
+    </script>
+    <!-- Pega a imagem inserida, 
+        coloca ela pra dentro do script 
+        escaneia se existe nudez, 
+        e no final exibe um alert na tela,
+        com o resultado do escaneamento-->
+  </body>
+</html>
